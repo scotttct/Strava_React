@@ -9,7 +9,7 @@ const handleLogin = () => {
 
 const Home = () => {
     return (
-        <div>
+        <div class="container text-center pt-5">
             <h1>Home</h1>
             <button onClick={handleLogin}>Connect with Strava</button>
         </div>
