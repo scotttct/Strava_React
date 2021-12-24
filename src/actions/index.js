@@ -1,6 +1,6 @@
-export const setUserActivities = (data) => {
+export const setUserStats = (data) => {
     return {
-        type: "SET_USER_ACTIVITIES",
+        type: "SET_USER_STATS",
         payload: data,
     };
 };

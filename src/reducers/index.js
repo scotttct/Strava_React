@@ -9,8 +9,8 @@ const setUserReducer = (tokens = null, action) => {
     }
 };
 
-const setUserActivitiesReducer = (user = null, action) => {
-    if (action.type === "SET_USER_ACTIVITIES") {
+const setUserStatsReducer = (user = null, action) => {
+    if (action.type === "SET_USER_STATS") {
         return action.payload;
     }
     return user;
@@ -18,5 +18,5 @@ const setUserActivitiesReducer = (user = null, action) => {
 
 export default combineReducers({
     returnTokens: setUserReducer,
-    user: setUserActivitiesReducer,
+    user: setUserStatsReducer,
 });
