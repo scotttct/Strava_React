@@ -9,9 +9,11 @@ const handleLogin = () => {
 
 const Home = () => {
     return (
-        <div class="container text-center pt-5">
-            <h1>Home</h1>
-            <button onClick={handleLogin}>Connect with Strava</button>
+        <div class="container text-left bg-dark text-light p-3 pl-5">
+            <div class="row">
+                <h1 class="col-md-9">ST-Activities</h1>
+                <button class="btn btn-primary col-md-2 pr-5 "  onClick={handleLogin}>Connect with Strava</button>
+            </div>
         </div>
     );
 };
